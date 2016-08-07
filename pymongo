@@ -1,3 +1,6 @@
+# install mongodb
+# install python
+# install pip
 # install  pymongo
 
 python -m pip install https://github.com/mongodb/mongo-python-driver/archive/3.2rc0.tar.gz
