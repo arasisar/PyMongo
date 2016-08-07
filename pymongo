@@ -1,0 +1,19 @@
+# install  pymongo
+
+python -m pip install https://github.com/mongodb/mongo-python-driver/archive/3.2rc0.tar.gz
+
+
+import pymongo
+from pymongo import MongoClient
+
+# connect to database
+connection = MongoClient('localhost', 27017)
+
+db = connection.test
+
+# handle to names collection
+names = db.names
+
+item = names.find_one()
+
+print item['name']
